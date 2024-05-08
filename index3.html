@@ -5,23 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inició de Sesión</title>
     <link rel="stylesheet" href="css/styles3.css">
-
 </head>
 
 <body>
      
-     <form action="">
+     <form>
 
-         <h1>Inició de Sesión</h1>
+         <h1>Inició Sesión</h1>
 
          <br>
 
-         <input type="Email" placeholder="Ingrese su Email">
-         <input type="Password" placeholder="Ingrese su contraseña">
+         <input type="Email" id="Email" placeholder="Ingrese su Email">
+         <input type="Password" id="Contra" placeholder="Ingrese su contraseña">
 
          <br> <br>
 
-         <button><a href="index2.html"></a>Iniciar Sesión</button>
+         <button id="btn2" type="button" onclick="alerta()">Iniciar Sesión</button>
 
          <br><br>
 
@@ -30,6 +29,7 @@
      </form>
 
     <script src="js/script3.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 </body>
 </html>
