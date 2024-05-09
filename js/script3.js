@@ -45,3 +45,7 @@ btn2.addEventListener("click", (e) =>{
        return false;
           
     }})
+
+
+    /*localStorage.setItem("", JSON.stringify())
+    var cat = localStorage.getItem("miGato");*/

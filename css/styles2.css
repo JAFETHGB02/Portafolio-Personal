@@ -1,180 +1,463 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@100;300;400;600;800&display=swap');
+body {
+
+    width: 1200px;
+    height: 1500px;
+    background: #009fff;
+    background: linear-gradient(to right, #ec2f48, #009fff);
+    background: -webkit-linear-gradient(to right, #ec2f48, #009fff);
+
+}
+
+
+.div1 {
+
+height: 66%;
+display: grid;
+grid-template-columns: 40% 60%;
+
+}
+
+
+.div2 {
+
+height: 66.5%;
+margin-top: 0%;
+
+
+}
+
+
+img {
+
+    width: 90%;
+    height: 65%;
+    margin-top: 2%;
+    margin-left: 5%;
+    
+
+}
+
+
+.p1 {
+
+    color: white;
+    margin-top: 10px;
+    margin-left: 20px;
+
+}
+
+
+a{
+
+    color: white;
+    margin-left: 4%;
+
+
+}
+
+
+.a1 {
+    
+    margin-left: 40%;
+
+}
+
+
+.bloque1 {
+
+    height: 8%;
+    width: 101%;
+    display: grid;
+    color: #ec2f48;
+    border-radius: 10px;
+    grid-template-columns: 30% 70%;
+
+}
+
+
+.bloque2 {
+
+    height: 42%;
+    width: 101%;
+    text-align: center;
+
+
+}
+
+
+.bloque3 {
+
+    height: 15%;
+    width: 101%;
+    display: grid;
+    color: white;
+    text-align: center;
+    grid-template-columns: 50% 50%;
+
+}
+
+
+.bloque4 {
+
+    height: 15%;
+    width: 101%;
+    display: grid;
+    color: white;
+    text-align: center;
+    grid-template-columns: 50% 50%;
+
+}
+
+
+.bloque5 {
+
+    height: 20%;
+    width: 101%;
+
+
+}
+
+
+.div5 {
+
+    width: 90%;
+    height: 90%;
+    display: grid;
+    margin-top: 7.5%;
+    margin-left: 4%;
+    text-align: center;
+    grid-template-columns: 50% 50%;
+
+}
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?fomily=Roboto:wght@100&display=swop');
 
 * {
 
-box-sizing: border-box;
-font-family: 'work sans';    
-margin: 0;
-padding: 0;
+  margin: 0;
+  padding: 0;
+
+}
+
+:root {
+
+  --color: rgb(56, 33, 186);
+
+}
+
+.contenedor {
+
+
+  display: grid;
+  height: 200px;
+  margin-left: 25px ;
+  margin-right: 25px ;
+  grid-template-columns: 1.5fr 1fr ;
+  grid-template-rows: 1fr 1fr 1fr;
+
+}
+
+.btn {
+ 
+  height: 30px;
+  width: 250px;
+  color: #fff;
+  position: relative;
+  padding: 20px 50px;
+  border: transparent;
+  letter-spacing: 10px;
+  transition: all 0.6s ease;
+  background-color: transparent;
 
 }
 
 
-html {
 
-/*ME PERMITE DESLISAR CUANDO HAGO CLICK EN LOS LINKS DEL MENU*/
-scroll-behavior: smooth;
+.btn-1 {
+
+  z-index: 1;
+  margin-left: 35%;
+  text-decoration: none;
+  transition: all 0.6s ease;
+  
+  }
+
+  .btn-1 > a{
+
+    color: white;
+    text-decoration: none;
+  
+  }
+  
+  .btn-1::after {
+  
+    top: 0;
+    width: 10%;
+    left: -10px;
+    content: "";
+    height: 100%;
+    position: absolute;
+    background-color: blue;
+    transition: all 0.4s ease;
+    transform: skew(20deg,0deg);
+    
+  }
+  
+  .btn-1::before {
+  
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    content: "";
+    height: 100%;
+    position: absolute;
+    border: 3px solid ;
+    transition: all 0.4s ease;
+    transform: skew(20deg,0deg);
+  
+  }
+  
+  .btn-1:hover::after {
+  
+      background-color: #ffffff31;
+      transform: skew(20deg, 0deg) translateX(220px);
+    
+  }
+  
+  .btn-1:hover::before {
+  
+      background-color: blue;
+      border: 3px solid white;
+      transform: skew(20deg, 0deg) scale(1.1);
+  
+  }
+
+
+
+
+  .btn-2 {
+
+      z-index: 1;
+      margin-left: 25%;
+      text-decoration: none;
+      transition: all 0.6s ease;
+    
+    }
+  
+  .btn-2 > a{
+  
+      color: white;
+      text-decoration: none;
+  
+  }
+    
+  .btn-2::after {
+    
+      top: 0;
+      width: 10%;
+      content: "";
+      left: -10px;
+      height: 100%;
+      position: absolute;
+      background-color: #ec2f48;
+      transition: all 0.4s ease;
+      transform: skew(20deg,0deg);
+      
+  }
+    
+
+  .btn-2::before {
+    
+      top: 0;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+      content: "";
+      height: 100%;
+      position: absolute;
+      transition: all 0.4s ease;
+      border: 3px solid white;
+      transform: skew(20deg,0deg);
+    
+  }
+    
+
+  .btn-2:hover::after {
+  
+      background-color: #ffffff31;
+      transform: skew(20deg, 0deg) translateX(220px);
+    
+  }
+    
+
+  .btn-2:hover::before {
+    
+      
+      background-color: red;
+      border: 3px solid  white;
+      transform: skew(20deg, 0deg) scale(1.1);
+    
+  }
+
+
+
+
+#btn-3 {
+
+    width: 50%;
+    height: 50%;
+    color: blue;
+    margin-left: 32.5%;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    border-color: blue;
+    background-color: white;
+    
+}
+
+#btn-4 {
+
+    width: 50%;
+    height: 50%;
+    color: red;
+    margin-left: 22%;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    border-color: red;
+    background-color: white;
 
 }
 
 
-/*MENU*/
-.contenedor-header {
 
- background: #1e2326;
- position: fixed;
- width: 100%;
- top: 0;
- left: 0;
- z-index: 99;
 
+.btn-5 {
+
+    z-index: 1;
+    margin-left: 35%;
+    text-decoration: none;
+    transition: all 0.6s ease;
+  
+  }
+
+.btn-5 > a{
+
+    color: white;
+    text-decoration: none;
+    
+}
+  
+.btn-5::after {
+  
+    top: 0;
+    width: 10%;
+    content: "";
+    left: -10px;
+    height: 100%;
+    position: absolute;
+    background-color: blue;
+    transition: all 0.4s ease;
+    transform: skew(20deg,0deg);
+  
+}
+  
+.btn-5::before {
+  
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    content: "";
+    height: 100%;
+    position: absolute;
+    transition: all 0.4s ease;
+    border: 3px solid white;
+    transform: skew(20deg,0deg);
+  
+}
+  
+.btn-5:hover::after {
+  
+    background-color: #ffffff31;
+    transform: skew(20deg, 0deg) translateX(220px);
+  
+}
+  
+.btn-5:hover::before {
+  
+    
+    background-color: blue;
+    border: 3px solid  white;
+    transform: skew(20deg, 0deg) scale(1.1);
+  
 }
 
 
-.contenedor-header header {
-
-max-width: 1100px;
-margin: auto;
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 15px 20px;
-
-}
 
 
-.contenedor-header header .logo a{
+.btn-6 {
 
-font-family: 'righteous';
-font-size: 36px;
-color: #1CB698;
-text-decoration: none;
+    z-index: 1;
+    margin-left: 25%;
+    text-decoration: none;
+    transition: all 0.6s ease;
+  
+  }
+
+.btn-6 > a{
+
+    color: white;
+    text-decoration: none;
 
 }
-
-
-.contenedor-header header ul{
-
-display: flex;
-list-style: none;
-
+  
+.btn-6::after {
+  
+    top: 0;
+    width: 10%;
+    content: "";
+    left: -10px;
+    height: 100%;
+    position: absolute;
+    background-color: red;
+    transition: all 0.4s ease;
+    transform: skew(20deg,0deg);
+  
 }
-
-
-.contenedor-header header nav ul li a{
-
-text-align: none;
-color: #fff;
-margin: 0 15px;
-padding: 3px;
-transition: .5s;
-text-decoration: none;
-
+  
+.btn-6::before {
+    
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    content: "";
+    height: 100%;
+    position: absolute;
+    transition: all 0.4s ease;
+    border: 3px solid white;
+    transform: skew(20deg,0deg);
+  
 }
-
-
-.contenedor-header header nav ul li a:hover{
-
-color:#1CB698;
-
+  
+.btn-6:hover::after {
+  
+    background-color: #ffffff31;
+    transform: skew(20deg, 0deg) translateX(220px);
+  
 }
-
-
-.nav-responsive{
-
-background-color: #1CB698;
-color: #fff;
-padding: 5px 10px;
-border-radius: 5px;
-cursor: pointer;
-display: none;
-
-}
-
-
-/*SECCIÓN INICIO*/
-.inicio {
-
-background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,.1)),
-url(img/fondo.jpg);
-background-size: cover;
-height: 100vh;
-color: #fff;
-display: flex;
-align-items: center;
-
-}
-
-
-.img1 {
-
-width: 30%;
-height: 30%;
-border-radius: 90%;
-
-}
-
-
-.inicio .contenedor-banner {
-
-padding: 20px;
-background-color: #1e2326;
-max-width: 350px;
-margin: auto;
-text-align: center;
-border-radius: 40px;
-
-}
-
-
-.inicio .contenedor-banner {
-
-margin-top: 40px;
-border: 10px solid #1CB698;
-display: block;
-width: 80%;
-margin: auto;
-border-radius: 100%;
-
-}
-
-
-.inicio .contenedor-banner h1 {
-
-margin-top: 40px;
-font-size: 42px;
-font-family: 'Righteous';
-
-}
-
-
-.inicio .contenedor-banner h2 {
-
-font-size: 15px;
-font-weight: normal;
-
-}
-
-
-.inicio .contenedor-banner .redes a {
-
-color: #fff;
-display: inline-block;
-text-decoration: none;
-border: 1px solid #fff;
-border-radius: 100%;
-width: 42px;
-height: 42px;
-line-height: 42px;
-margin: 40px 5px;
-font-size: 20px;
-transition: .3s;
-
-}
-
-
-.inicio .contenedor-banner .redes a:hover{
-
-background-color: #1CB698;
-
+  
+.btn-6:hover::before {
+      
+    background-color: red;
+    border: 3px solid  white;
+    transform: skew(20deg, 0deg) scale(1.1);
+    
 }
