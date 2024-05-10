@@ -7,7 +7,7 @@ let registro = [];
 btn2.addEventListener("click", (e) =>{
 
 
-    if (Email.value != '' && Contra.value  != '') {  
+    if (Email.value != '' && Contra.value  != '' ) {  
 
         e.preventDefault()
          const data  = {
@@ -15,14 +15,17 @@ btn2.addEventListener("click", (e) =>{
             Email: Email.value,
             Contra: Contra.value
 
-         }
+         } 
+
+
     
          registro = JSON.parse(localStorage.getItem("registro")) || [];
 
-         registro.push(data)
-         
-          localStorage.setItem("registro", JSON.stringify(registro))
-    
+         console.log(registro);
+
+         encontrado = registro.find(usuario => usuario.email == Email.value && usuario.contra == Contra.value )
+
+         console.log(encontrado)
         
          swal({
           title: "❤️SESIÓN INICIADA❤️",
@@ -43,8 +46,10 @@ btn2.addEventListener("click", (e) =>{
     
        alert ('Los datos estan incompletos')
        return false;
-          
-    }})
+      
+      
+}})
+
 
 
     /*localStorage.setItem("", JSON.stringify())
